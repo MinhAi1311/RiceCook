@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web nồi cơm điện</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">RCMTFK</a>
+                </div>
+                <ul>
+                    <li ><a href="/MainPage.html">Trang Chủ</a></li>
+                    <li><a href="/pages/product.html">Sản Phẩm</a></li>
+                    <li><a href="/pages/Intro.html">Giới Thiệu</a></li>
+                    <li><a href="/pages/Login.html">Đăng nhập</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>
+<!-- slider -->
+<!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <img src="anh/1.jpg">       
+        </div> 
+        <div class="mySlides fade">
+        <img src="anh/2.jpg">
+        </div>
+        <div class="mySlides fade">
+        <img src="anh/3.jpg">
+        </div>
+        <!-- buttons tiep lui` -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  <br>
+  
+  <!-- dau cham -->
+  <div class="div1" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <!-- script slider -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";
+    }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 2000); // img 2s
+        }
+</script>
+
+<!-- Sản phẩm nổi bật -->
+<div id="frame1">
+    <div class="container">
+        <h1>SẢN PHẨM NỔI BẬT</h1>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi1.jpg" alt="">
+                  <span>Nồi cơm Toshiba</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi2.webp" alt="">
+                  <span>Nồi cơm Sharp</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi3.webp" alt="">
+                  <span>Nồi cơm HappyCook</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi4.jpg" alt="">
+                  <span>Nồi cơm Panasonic</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi5.jpg" alt="">
+                  <span>Nồi cơm Kangaroo</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi6.jpg" alt="">
+                  <span>Nồi cơm BlueStone</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi7.webp" alt="">
+                  <span>Nồi cơm Panasonic</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+            <div class="product_item">
+                <a href=" ">
+                  <img src="anh/noi8.jpg" alt="">
+                  <span>Nồi cơm Toshiba</span><br>
+                  <span style="color: rgb(255, 0, 0);">Liên Hệ</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Phân loại -->
+    <div id="frame2">
+            <h1><b>Phân Loại</b></h1><br>
+                <label>&nbsp;<u>Thương Hiệu:</u> </label><br><br>
+                    <input type="checkbox" name="thuonghieu" value="t"><span>Toshiba </span>
+                    <input type="checkbox" name="thuonghieu" value="c"><span>Cuckoo</span><br>
+                    <input type="checkbox" name="thuonghieu" value="s"><span>Sharp </span>
+                    <input type="checkbox" name="thuonghieu" value="sh"><span>Sunhouse</span><br>
+                    <input type="checkbox" name="thuonghieu" value="bs"><span>BlueStone</span><br>
+                    <input type="checkbox" name="thuonghieu" value="hc"><span>HappyCook</span><br>
+                    <input type="checkbox" name="thuonghieu" value="pl"><span>Philips</span><br>
+                    <input type="checkbox" name="thuonghieu" value="k"><span>Kangaroo</span><br>
+                    <input type="checkbox" name="thuonghieu" value="p"><span>Panasonic</span><br><br>
+                <label>&nbsp;<u>Nơi bán:</u> </label><br><br>
+                    <input type="radio" name="noiban" value="hn"><span> TP.Hà Nội</span><br>
+                    <input type="radio" name="noiban" value="hcm"><span> TP.Hồ Chí Minh</span><br>
+                    <input type="radio" name="noiban" value="bmt"><span> Buôn Ma Thuật</span><br>
+                    <input type="radio" name="noiban" value="bn"><span> Bắc Ninh</span><br><br>
+                <label>&nbsp;<u>Giá tiền:</u></label><br><br>
+                    <input type="text" name="min" size="15" maxlength="10" placeholder="Tối thiểu"><br><br>
+                    <input type="text" name="max" size="15" maxlength="10" placeholder="Tối đa"><br><br>
+                    <input type="checkbox" name="gia" value="1000"><span> Từ 1tr đến 2tr </span><br>
+                    <input type="checkbox" name="gia" value="2000"><span> 2tr đến 5tr </span><br>
+                    <input type="checkbox" name="gia" value="5000"><span> Lớn hơn 5tr</span>
+                <br><br>
+                <label>&nbsp;<u>Đánh giá:</u></label><br><br>
+                    <input type="radio" name="sao" value="5"><span> 5 sao</span>
+                    <input type="radio" name="sao" value="4"><span> 4 sao</span>
+                    <input type="radio" name="sao" value="3"><span> 3 sao</span>
+                    <input type="radio" name="sao" value="2"><span> 2 sao</span>
+                    <input type="radio" name="sao" value="1"><span> 1 sao</span>
+                <br><br>
+                <button class="button" type="reset">Thiết lập lại</button>  
+                <button class="button" type="submit">Áp dụng</button>
+    </div>
+    <!-- phần liên hệ -->
+    <div id="frame3">
+        <div class="container">
+            <h1>NỒI CƠM ĐIỆN</h1><br>
+                <strong>Nồi cơm điện - Vật dụng gắn kết tình cảm gia đình bạn</strong><br><br>
+                    <span>&emsp;Nồi cơm điện quả thật một vật dụng không thể thiếu trong gian bếp của mỗi gia đình. Tuy nhiên, chính vì sự cần thiết của nó mà trên thị trường hiện nay có rất nhiều Nồi cơm điện với mẫu mã cùng thương hiệu khác nhau, làm cho chúng ta đau đầu đắn đo trước khi có thể chọn được một chiếc Nồi cơm điện ưng ý cho nhà mình. Hiểu được khó khăn đó của quý khách hàng thân thương, RCMTFK xin phép đưa đến quý vị bài viết hướng dẫn chọn lựa mua sắm vật dụng này và mong rằng sau khi đọc xong, căn bếp của gia đình mình sẽ xuất hiện một chiếc Nồi cơm điện vừa ý nhất nhé.</span><br><br>
+                    <strong>Lựa chọn dung tích Nồi cơm điện</strong><br>
+                <strong>- Nồi cơm điện 1 lít trở xuống</strong><br>
+                    <span>Nồi cơm điện có dung tích từ 1 lít trở xuống phù hợp cho gia đình có từ 1-2 thành viên.</span><br><br>
+                <strong>- Nồi cơm điện 1 lít - 1.5 lít</strong><br>
+                    <span>Nồi cơm điện có dung tích từ 1- 1,5 lít trở xuống phù hợp cho gia đình có từ 2-4 thành viên.</span><br><br>
+            <details>
+                <summary>Xem thêm</summary>
+                    <strong>- Nồi cơm điện 1.5 lít - 2 lít</strong><br>
+                    <span>Nồi cơm điện có dung tích từ 1,5 - 2 lít trở xuống phù hợp cho gia đình có từ 4-6 thành viên.</span><br><br>
+                <strong>- Nồi cơm điện 2 lít trở lên</strong><br>
+                    <span>Nồi cơm điện có dung tích từ 1,5 - 2 lít trở xuống phù hợp cho gia đình có từ 4-6 thành viên.<br>
+                        &emsp;Ngoài ra cũng nên lưu ý, dung tích nồi càng lớn thì kích thước sẽ càng to, quý khách hãy ước lượng không gian bếp nhà mình để chọn kích thước cũng như dung tích nồi cho phù hợp nhé.</span><br><br>
+                <strong>Cách lựa chọn nồi cơm điện dựa vào kiểu dáng thiết kế</strong><br>
+                    <span>Nồi cơm điện hiện nay chủ yếu được thiết kế với 2 kiểu dáng chính là nắp gài và nắp rời.
+
+                        <br>&emsp;Với loại nồi nắp gài, cơm của bạn sẽ được giữ nóng lâu hơn và đa phần khách hàng cảm nhận rằng nồi nắp gài nấu cơm ngon hơn, ít bị nát và giữ dinh dưỡng tốt hơn do hơi nước ít bị thoát ra trong lúc nấu. Tuy nhiên ta lại gặp kha khá khó khăn trong việc chùi rửa, lau chùi nồi và nắp nồi với thiết kế này.
+                    
+                        <br>&emsp;Với Nồi cơm điện nắp rời, ta có thể rửa và lau chùi sạch sẽ phần nắp nồi để ngăn cặn thức ăn hay mùi thức ăn lâu ngày bám vào. Tuy vậy, với thiết kế này thì cơm không được giữ nóng lâu và đôi khi nấu quá nhiều cơm cũng có thể bị trào nước ra ngoài khi sôi.
+                    </span><br><br>
+                <strong>Mua Nồi cơm điện giá tốt, chính hãng tại RCMTFK</strong><br>
+                    <span>&emsp;Điều cuối cùng quý khách hàng cần quan tâm là một địa điểm mua hàng uy tín và bảo hành cho những hỏng hóc không may xảy ra, và tại RCMTFK có đa dạng các loại nồi cơm mẫu mã đẹp, tính năng hiện đại đến từ nhiều thương hiệu nổi tiếng như Nồi cơm điện Toshiba, Nồi cơm điện Cuckoo, Nồi cơm điện Philips. Bên cạnh đó là chính sách dịch vụ vượt trội như  miễn phí vận chuyển, giao hàng tận nơi, bảo hành chính hãng, hỗ trợ trả góp 0% tại toàn bộ các trung tâm phủ sóng toàn quốc.<br><br>
+            </details>            
+        </div>
+    </div>
+    <!-- ads -->
+    <div id="frame4">
+        <div class="container">
+            <a href=" ">
+                <img src="anh/ads.jpg" alt="ads">
+            </a>
+        </div>
+    </div>
+    <div id="frame5">
+        <div class="container">
+            <a href=" ">
+                <img src="anh/ads.jpg" alt="ads">
+            </a>
+        </div>
+    </div>
+    <div id="frame6">
+        <div class="container">
+            <a href=" ">
+                <img src="anh/noi-com-dien-tu-zojirushi-nl-gaq10v-bm-2.webp" alt="ads">
+            </a>
+        </div>
+    </div>
+    <div id="frame7">
+        <div class="container">
+            <a href=" ">
+                <img src="anh/ads2.png" alt="ads">
+            </a>
+        </div>
+    </div>
+<div id="footer">
+    <p id="p1">@COPYRIGHT By MinhAi and A Mạnh</p>
+</div>
+</body>
+</html>

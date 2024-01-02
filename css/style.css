@@ -1,0 +1,313 @@
+/* header */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(255, 47, 47);
+}
+.container {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+header{
+    position: relative;
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+}
+header::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+}
+nav{
+    position: fixed;
+    width: 100%;
+     padding: 20px 0;
+    z-index: 1;
+}
+nav .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    }
+
+nav .menu{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.menu ul{
+    display: flex;;
+}
+menu ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover{
+    background: yellow;
+    color: #000;
+}
+ul {
+    list-style: none;
+}
+/* slider */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 810px;
+  height: 400px;
+  left: -12%;
+  position: relative;
+  border-radius: 3%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: rgb(171, 171, 171);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d0cfcf;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #1c1c1c;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(243, 240, 240);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 209vh;
+  overflow: auto;
+}
+/* product */
+.product_item {
+  float:right;
+  width:200px;
+  display:block;
+  text-align: center;
+  margin-right: 30px;
+  margin-top: 20px;
+  height: 270px;
+  border-radius: 10px;
+  background-color: white;
+}
+img{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+#frame1 {
+  position:relative;
+  width: 960px;
+  height: 650px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 13.4%;
+  overflow: auto;
+}
+span{
+  font-size:large ;
+  background-color: white;
+}
+/* filter */
+#frame2 {
+  position:relative;
+  width: 210px;
+  height: 650px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: -650px;
+  left: 73%;
+  overflow: auto;
+  padding-left: 5px;
+}
+label {
+  font-size: large;
+  border-radius: 5px;
+  background-color: white;
+}
+input{
+  border-radius: 5px;
+  font-size: medium;
+  background-color: white;
+}
+.button{
+  height: 30px;
+  width: 95px;
+  background-color: rgb(30, 71, 177);
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 1%;
+}
+u{
+  background-color: white;
+}
+b{
+  background-color: white;
+}
+/* introduce*/
+#frame3 {
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 30px;
+  left: 13.4%;
+  overflow:auto;
+}
+strong{
+  background-color: white;
+  font-size: 18pt;
+}
+h1{
+  background-color: white;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 26px;
+}
+details{
+  background-color: white;
+  font-size: 24px;
+}
+summary{
+  background-color: white;
+  color: rgb(0, 0, 179);
+  text-align: center;
+  margin-right: 20px;
+}
+/* ads */
+#frame4 {
+  overflow: hidden;
+  height: 600px;
+  top: 12%;
+  left: 1%;
+  position: fixed;
+}
+#frame5 {
+  overflow: hidden;
+  height: 600px;
+  top: 12%;
+  left: 88%;
+  position: fixed;
+}
+#frame6 {
+  overflow: hidden;
+  height: 190px;
+  width: 360px;
+  margin-top: -92.2%;
+  left: 64%;
+  position: relative;
+  border-radius: 5%;
+}
+#frame7 {
+  overflow: hidden;
+  height: 200px;
+  width: 360px;
+  margin-top: 10px;
+  left: 64%;
+  border-radius: 5%;
+  position: relative;
+}
+/* fix */
+.div{
+  background-color: rgb(243, 240, 240);
+}
+.div1{
+  background-color: rgb(243, 240, 240);
+  margin-right: 23%;
+}
+/* footer */
+#footer {
+  position: relative;
+  background-color: rgb(255, 47, 47);
+  margin-top: 70%;
+}
+#p1{
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  padding: 30px;
+}
